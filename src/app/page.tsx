@@ -5,10 +5,8 @@ import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
+import ChatSection from "@/components/ChatSection";
 
-// const ChatWidget = dynamic(() => import("@/components/ChatWidget"), {
-//   ssr: false,
-// });
 
 export default function HomePage() {
   return (
@@ -19,12 +17,7 @@ export default function HomePage() {
       <SkillsSection />
       <EducationSection />
       <ContactSection />
-      {/* <section id="chat" className="min-h-screen px-4 py-16 bg-white">
-        <h2 className="text-3xl font-semibold mb-6 text-center">
-          Chat with Me
-        </h2>
-        <ChatWidget />
-      </section> */}
+      <ChatSection />
     </main>
   );
 }
