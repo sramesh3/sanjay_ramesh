@@ -1,45 +1,46 @@
+// components/ProjectsSection.tsx
 "use client";
 
 import { motion } from "framer-motion";
-
-const PROJECTS = [
-  {
-    title: "Sentiment Analysis",
-    desc: "Built models on 34M+ Amazon reviews using TF‑IDF, Word2Vec, FastText, and BERT. Evaluated via F1, AUC‑ROC, and confusion matrices.",
-  },
-  {
-    title: "Greenplate",
-    desc: "Java/Android food‑tracking app (MVVM) with meal logging, shopping lists, Agile workflows, and UML‑driven design.",
-  },
-  {
-    title: "SwapSpot",
-    desc: "Co‑developed a SwiftUI subleasing app for students; optimized listing logic, reducing response times by 15%.",
-  },
-];
+import { ExpandableCardDemo } from "./ui/ExpandableCard";
+import {Boxes} from "./ui/BackgroundBoxes";
+import { cn } from "@/lib/utils";
+import { BackgroundBeamsWithCollision } from "./ui/Beams";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="min-h-screen px-4 py-16 bg-white">
-      <motion.h2
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-3xl font-semibold mb-6 text-center"
-      >
-        Projects
-      </motion.h2>
-      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {PROJECTS.map((p) => (
-          <motion.div
-            key={p.title}
-            whileHover={{ y: -5 }}
-            className="p-6 border rounded-lg shadow transition"
+    <section
+      id="projects"
+      className="bg-black border-t-2 border-t-blue-500 py-16"
+    >
+      <BackgroundBeamsWithCollision>
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10 flex flex-col md:flex-row items-start gap-8">
+        {/* Left: Title & Instructions */}
+        <div className="md:w-1/3">
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl font-semibold text-white text-left"
           >
-            <h4 className="text-xl font-medium mb-2">{p.title}</h4>
-            <p className="text-gray-700">{p.desc}</p>
-          </motion.div>
-        ))}
+            Projects
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="mt-2 text-gray-300 text-sm"
+          >
+            Click on each card to reveal more about the project.
+          </motion.p>
+        </div>
+
+        {/* Right: Cards */}
+        <div className="md:w-2/3">
+          <ExpandableCardDemo />
+        </div>
       </div>
+      </BackgroundBeamsWithCollision>
     </section>
   );
 }
