@@ -38,14 +38,24 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-black dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-white dark:text-white max-w-4xl">
-          <Cover>My Journey</Cover>
-        </h2>
-        <p className="text-white dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Here&apos;s
-          a timeline of my experiences.
-        </p>
+      <div className="max-w-7xl pt-20 mx-auto px-4 md:px-8 lg:px-10 flex flex-col items-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-lg md:text-4xl mb-4 text-white dark:text-white max-w-4xl text-center"
+        >
+          <Cover className="text-3xl font-semibold text-center">My Journey</Cover>
+        </motion.h2>
+        <motion.p
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-white dark:text-neutral-300 text-sm md:text-base max-w-sm"
+          >
+            Here&apos;s
+            a timeline of my experiences.
+          </motion.p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
