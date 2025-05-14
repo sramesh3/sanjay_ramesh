@@ -30,14 +30,14 @@ import { CardSpotlight } from "./ui/CardSpotlight";
 export default function SkillsSection() {
   return (
     <section id="skills" className="min-h-screen px-4 py-16 bg-black border-t-2 border-t-blue-500">
-      <motion.h2
+      <motion.h1
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white"
       >
         <Cover>Skills</Cover>
-      </motion.h2>
+      </motion.h1>
       <div className="grid grid-cols-3 gap-6 max-w-6xl mx-auto">
         <CardSpotlight className="h-96 w-96">
           <div className="text-neutral-200 mt-4 relative z-20">
