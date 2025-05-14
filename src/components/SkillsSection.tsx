@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Cover } from "./ui/Cover";
+import { Button } from "./ui/moving-border";
 
 const SKILLS = [
   "Java", "Python", "JavaScript", "Swift", "SQL",

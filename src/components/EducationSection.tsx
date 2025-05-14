@@ -112,13 +112,19 @@ export default function EducationSection() {
                 translateZ="60"
                 className="mt-4 text-sm text-neutral-300 dark:text-neutral-300 hover:underline"
               >
-                OOP & Design
+                Object Oriented Programming
               </CardItem>
               <CardItem
                 translateZ="60"
                 className="text-sm text-neutral-300 dark:text-neutral-300 hover:underline"
               >
                 Perception & Robotics
+              </CardItem>
+              <CardItem
+                translateZ="60"
+                className="text-sm text-neutral-300 dark:text-neutral-300 hover:underline"
+              >
+                Objects and Design
               </CardItem>
               <CardItem
                 translateZ="60"
