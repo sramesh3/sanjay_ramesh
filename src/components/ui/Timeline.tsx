@@ -39,14 +39,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl pt-20 mx-auto px-4 md:px-8 lg:px-10 flex flex-col items-center">
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-lg md:text-4xl mb-4 text-white dark:text-white max-w-4xl text-center"
+          className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white"
         >
-          <Cover className="text-3xl font-semibold text-center">My Journey</Cover>
-        </motion.h2>
+          <Cover>My Journey</Cover>
+        </motion.h1>
         <motion.p
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
