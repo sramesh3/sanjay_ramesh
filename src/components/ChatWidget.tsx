@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 interface Message {
   role: "user" | "bot";
@@ -41,9 +40,9 @@ export default function ChatWidget() {
   };
 
   return (
-    <div className="flex flex-col max-w-xl mx-auto space-y-4">
+    <div className="flex flex-col max-w-xl mx-auto space-y-4 bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-700">
       {/* Chat history */}
-      <div className="flex-1 space-y-3 overflow-y-auto max-h-96 p-4 rounded-md border border-white/[0.5]">
+      <div className="flex-1 space-y-3 overflow-y-auto max-h-96 p-4 rounded-md bg-gray-800 border border-gray-700">
         {messages.map((msg, idx) => (
           <motion.div
             key={idx}
@@ -62,27 +61,27 @@ export default function ChatWidget() {
                 alt="Bot Profile"
                 width={32}
                 height={32}
-                className="rounded-full"
+                className="rounded-full border border-gray-600"
               />
             )}
             <span
               className={
-                `inline-block px-3 py-2 rounded-lg whitespace-pre-wrap text-white` +
+                `inline-block px-4 py-2 rounded-lg whitespace-pre-wrap text-white shadow-md` +
                 (msg.role === "user"
-                  ? " bg-blue-600"
-                  : " bg-gray-800")
+                  ? " bg-blue-500"
+                  : " bg-gray-700")
               }
             >
               {msg.content}
             </span>
             {msg.role === "user" && (
               <img
-              src="images/user.jpeg"
-              alt="User Profile"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
+                src="images/user.jpeg"
+                alt="User Profile"
+                width={32}
+                height={32}
+                className="rounded-full border border-gray-600"
+              />
             )}
           </motion.div>
         ))}
@@ -94,7 +93,7 @@ export default function ChatWidget() {
           rows={2}
           value={input}
           onChange={(e) => setInput(e.currentTarget.value)}
-          className="flex-1 p-2 border rounded-md resize-none text-white"
+          className="flex-1 p-3 border rounded-md resize-none text-white bg-gray-800 border-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           placeholder="Ask me anything…"
           disabled={loading}
           initial={{ opacity: 0 }}
@@ -104,7 +103,7 @@ export default function ChatWidget() {
         <motion.button
           onClick={handleSend}
           disabled={loading}
-          className="px-4 py-2 bg-blue-600 text-white rounded-md disabled:opacity-50"
+          className="px-4 py-2 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 disabled:opacity-50 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
