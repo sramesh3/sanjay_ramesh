@@ -5,6 +5,16 @@ import { Timeline, TimelineEntry } from "@/components/ui/Timeline";
 export default function ExperienceSection() {
   const data: TimelineEntry[] = [
     {
+      title: "May 2025",
+      content: (
+        <>
+          <h4 className="text-xl font-bold text-white mb-2">
+            Incoming HR Analytics Intern @ Cox Enterprises
+          </h4>
+        </>
+      ),
+    },
+    {
       title: "Aug 2024 – Present",
       content: (
         <>

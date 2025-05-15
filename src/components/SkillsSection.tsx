@@ -10,11 +10,11 @@ const SKILLS = [
   "Scikit‑learn", "NumPy", "Pandas", "Git", "Figma"
 ];
 
-const FRAMEWORKS = ["React", "Redux", "Redux Toolkit", "SwiftUI", "Next.js"];
+const FRAMEWORKS = ["React", "Redux", "Redux Toolkit", "SwiftUI", "Next.js", "Flask", "Tailwind CSS"];
 
 const LIBRARIES = ["Axios", "Scikit-learn", "NumPy", "Pandas", "Matplotlib"];
 
-const TOOLS = ["Git", "Firebase", "Figma", "VSCode", "Xcode", "Android Studio", "Jupyter Notebook"];
+const TOOLS = ["Git", "Firebase", "Figma", "VSCode", "Xcode", "Android Studio", "Jupyter Notebook", "Google Gemini"];
 
 const METHODOLOGIES = ["Agile", "Scrum"];
 

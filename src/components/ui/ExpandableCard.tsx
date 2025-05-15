@@ -197,59 +197,76 @@ const cards = [
     src: "/images/python.jpeg",
     content: () => {
       return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
-        </p>
+        <div className="space-y-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mb-8">
+          <p className="font-semibold">Tech Stack:</p>
+          <ul className="list-disc list-inside">
+            <li>Python</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>Scikit-learn</li>
+            <li>Matplotlib</li>
+            <li>NLTK</li>
+          </ul>
+          <p className="font-semibold">Project Highlights:</p>
+          <ul className="list-disc list-inside">
+            <li>Developed a scalable sentiment analysis model on the Amazon Review Polarity Dataset (34M+ reviews) using Natural Language Processing techniques (TF-IDF, Word2Vec, FastText, BERT).</li>
+            <li>Implemented ML models including Logistic Regression, Naive Bayes, and Random Forest.</li>
+            <li>Optimized performance using F1-score, AUC-ROC, and confusion matrices.</li>
+          </ul>
+          <p className="font-semibold">Documentation:</p>
+          <p>Documented methodology, results, and visualizations on GitHub Pages, ensuring reproducibility and transparency for future research.</p>
+        </div>
       );
     },
   },
   {
-    description: "A modeular food tracking app built with Java (Android Studio) using MVVM architecture, enabling users to lod meals, create shopping lists, and manage recipies",
+    description: "A modular food tracking app built with Java (Android Studio) using MVVM architecture, enabling users to log meals, create shopping lists, and manage recipes",
     title: "Greenplate",
     src: "/images/java.jpeg",
     content: () => {
       return (
-        <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
-        </p>
+        <div className="space-y-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mb-8">
+          <p className="font-semibold">Tech Stack:</p>
+          <ul className="list-disc list-inside">
+            <li>Java</li>
+            <li>Android Studio</li>
+            <li>Firebase</li>
+            <li>UML Diagrams</li>
+            <li>Agile (Scrum)</li>
+            <li>Jira</li>
+          </ul>
+          <p className="font-semibold">Project Highlights:</p>
+          <ul className="list-disc list-inside">
+            <li>Developed a modular food tracking app in Java (Android Studio) using MVVM architecture, enabling users to log meals, create shopping lists, and manage recipes.</li>
+            <li>Applied object-oriented design principles (SOLID, GRASP) to ensure maintainability and scalability, reducing debugging time by 20% through well-structured UML diagrams (Sequence, Design Class Diagrams).</li>
+            <li>Managed Agile workflows with Scrum methodologies and Jira, collaborating with a team to deliver milestones 10% ahead of schedule.</li>
+            <li>Integrated Firebase for real-time data synchronization, ensuring secure and reliable user data storage and retrieval.</li>
+          </ul>
+        </div>
       );
     },
   },
-
   {
     description: "A subleasing app for college students built using Swift and SwiftUI",
     title: "SwapSpot",
     src: "/images/Swift.jpeg",
     content: () => {
       return (
-        <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
-        </p>
+        <div className="space-y-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mb-8">
+          <p className="font-semibold">Tech Stack:</p>
+          <ul className="list-disc list-inside">
+            <li>Swift</li>
+            <li>SwiftUI</li>
+            <li>Firebase</li>
+            <li>XCode</li>
+          </ul>
+          <p className="font-semibold">Project Highlights:</p>
+          <ul className="list-disc list-inside">
+            <li>Co-developed a subleasing app for college students using Swift and SwiftUI, facilitating 50+ sublease postings during testing.</li>
+            <li>Designed and optimized listing models with efficient backend logic, reducing app response time by 15% for browsing and posting subleases.</li>
+            <li>Leveraged GitHub for version control and collaboration, reviewing pull requests and ensuring code quality.</li>
+          </ul>
+        </div>
       );
     },
   },
@@ -259,38 +276,48 @@ const cards = [
     src: "/images/SQL.jpeg",
     content: () => {
       return (
-        <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era.
-          With a career spanning over a decade, Led Zeppelin has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United Kingdom and abroad.
-        </p>
+        <div className="space-y-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mb-8">
+          <p className="font-semibold">Tech Stack:</p>
+          <ul className="list-disc list-inside">
+            <li>SQL</li>
+            <li>MySQL Workbench</li>
+            <li>EERD</li>
+          </ul>
+          <p className="font-semibold">Project Highlights:</p>
+          <ul className="list-disc list-inside">
+            <li>Designed an Enhanced Entity-Relationship Diagram (EERD) based on detailed business requirements to model efficient delivery systems for local companies.</li>
+            <li>Developed SQL schemas by creating tables and defining constraints, accurately transforming the dataset into a functional and scalable database.</li>
+            <li>Implemented complex SQL queries, views, and stored procedures to enable seamless application functionality.</li>
+          </ul>
+        </div>
       );
     },
   },
   {
-    description: "Web Application that provides personalized meal recommndations for students eating at Georgia Tech dining halls",
+    description: "Web Application that provides personalized meal recommendations for students eating at Georgia Tech dining halls",
     title: "DineSmart",
     src: "/images/javascript.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        <p>
-          &quot;Aawarapan&quot;, a Bollywood movie starring Emraan Hashmi, is
-          renowned for its intense storyline and powerful performances. Directed
-          by Mohit Suri, the film has become a significant work in the Indian
-          film industry. <br /> <br /> The movie explores themes of love,
-          redemption, and sacrifice, capturing the essence of human emotions and
-          relationships. With a gripping narrative and memorable music,
-          &quot;Aawarapan&quot; has garnered a massive fan following both in
-          India and abroad, solidifying Emraan Hashmi&apos;s status as a
-          versatile actor.
-        </p>
+        <div className="space-y-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mb-8">
+          <p className="font-semibold">Tech Stack:</p>
+          <ul className="list-disc list-inside">
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Figma</li>
+          </ul>
+          <p className="font-semibold">Project Highlights:</p>
+          <ul className="list-disc list-inside">
+            <li>Created and presented for Georgia Tech's HackGT X Hackathon.</li>
+            <li>Developed a web application using PHP and MySQL to provide personalized meal recommendations, utilizing data from 50+ food options across 3 dining halls.</li>
+            <li>Designed the front-end interface, ensuring responsiveness and accessibility across devices.</li>
+            <li>Collaborated with a team of 4 in a 48-hour hackathon, delivering a fully functional web app and receiving positive feedback from judges.</li>
+            <li>Implemented a recommendation system that analyzed users' personal information and used a custom mathematical algorithm to deliver tailored meal suggestions</li>
+          </ul>
+        </div>
       );
     },
   },
