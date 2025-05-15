@@ -74,6 +74,19 @@ export default function AboutSection() {
             </p>
           </motion.div>
         </motion.div>
+
+        {/* Call-to-Action for Chatbot */}
+        <div className="mt-12 text-center">
+          <p className="text-lg text-white mb-4">
+            Want to know more about me? Feel free to ask my chatbot!
+          </p>
+          <a
+            href="#chat"
+            className="inline-block px-6 py-3 text-lg font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            Chat with Me
+          </a>
+        </div>
       </section>
     </WavyBackground>
   );
