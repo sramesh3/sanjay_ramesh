@@ -38,7 +38,7 @@ export default function ExperienceSection() {
             Frontend Enginner Intern @ VDart
           </h4>
           <ul className="list-disc list-inside space-y-2 text-white">
-            <li>Engineered a responsive landing page using React.js, Tailwind CSS, and the Aceternity UI library, improving user engagement through intuitive access to the company's talent management services.</li>
+            <li>Engineered a responsive landing page using React.js, Tailwind CSS, and the Aceternity UI library, improving user engagement through intuitive access to the company&apos;s talent management services.</li>
             <li>Prototyped UI designs with Figma, translating complex design requirements into functional and visually appealing interfaces.</li>
             <li>Gained experience in Redux Toolkit for efficient state management and Axios for seamless API integration.</li>
           </ul>

@@ -3,8 +3,6 @@
 
 import { motion } from "framer-motion";
 import { ExpandableCardDemo } from "./ui/ExpandableCard";
-import {Boxes} from "./ui/BackgroundBoxes";
-import { cn } from "@/lib/utils";
 import { BackgroundBeamsWithCollision } from "./ui/Beams";
 import { Cover } from "./ui/Cover";
 
