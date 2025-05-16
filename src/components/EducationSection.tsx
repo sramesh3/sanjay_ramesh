@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { Cover } from "./ui/Cover";
-import { HoverEffect } from "./ui/card-hover-effect";
 
 export default function EducationSection() {
   return (

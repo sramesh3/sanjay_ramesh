@@ -28,7 +28,7 @@ export default function ContactSection() {
                 Connect with me on LinkedIn
               </h2>
               <p className="mt-4 text-left text-base/6 text-neutral-200">
-                Let's connect and explore opportunities together!
+                Let&apos;s connect and explore opportunities together!
               </p>
             </div>
             <PinContainer

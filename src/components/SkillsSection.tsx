@@ -2,13 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Cover } from "./ui/Cover";
-import { Button } from "./ui/moving-border";
-
-const SKILLS = [
-  "Java", "Python", "JavaScript", "Swift", "SQL",
-  "React", "Redux", "SwiftUI", "Firebase", "Tailwind CSS",
-  "Scikit‑learn", "NumPy", "Pandas", "Git", "Figma"
-];
 
 const FRAMEWORKS = ["React", "Redux", "Redux Toolkit", "SwiftUI", "Next.js", "Flask", "Tailwind CSS"];
 

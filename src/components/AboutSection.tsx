@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AuroraBackground } from "./ui/AuroraBackground";
 import { TypewriterEffect } from "./ui/TypewriterEffect";
 import { WavyBackground } from "./ui/WavyBackground";
 
