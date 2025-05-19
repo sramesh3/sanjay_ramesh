@@ -126,13 +126,13 @@ export function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-200 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-2 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-200 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
-              <motion.div layoutId={`image-${card.title}-${id}`} className="h-40 w-40 md:h-24 md:w-40 flex-shrink-0">
+            <div className="flex gap-6 flex-col md:flex-row">
+              <motion.div layoutId={`image-${card.title}-${id}`} className="h-24 w-24 md:h-20 md:w-20 flex-shrink-0">
                 <img
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                   src={card.src}
                   alt={card.title}
                   className="h-full w-full rounded-lg object-cover object-top"
@@ -141,14 +141,13 @@ export function ExpandableCardDemo() {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-extrabold text-white
-                   dark:text-neutral-200 text-center md:text-left"
+                  className="font-bold text-white dark:text-neutral-200 text-center md:text-left"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-white dark:text-neutral-400 text-center md:text-left"
+                  className="text-white dark:text-neutral-400 text-center md:text-left text-sm"
                 >
                   {card.description}
                 </motion.p>
@@ -196,6 +195,33 @@ export const CloseIcon = () => {
 
 const cards = [
   {
+    description: "An innovative personal portfolio website built on Next.JS, featuring an AI chatbot for interactive user engagement",
+    title: "Personal Portfolio Website",
+    src: "/images/python.jpeg",
+    content: () => {
+      return (
+        <div className="space-y-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mb-8">
+          <p className="font-semibold">Tech Stack:</p>
+          <ul className="list-disc list-inside">
+            <li>Next.js</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+            <li>TypeScript</li>
+            <li>Google Gemini API</li>
+          </ul>
+          <p className="font-semibold">Project Highlights:</p>
+          <ul className="list-disc list-inside">
+            <li>Developed a dynamic and responsive personal portfolio website using Next.js and React, showcasing projects and skills effectively.</li>
+            <li>Integrated an AI chatbot powered by Google Gemini API to enhance user engagement.</li>
+            <li>Implemented modern UI/UX design principles with Tailwind CSS for a visually appealing and seamless user experience.</li>
+          </ul>
+          <p className="font-semibold">Documentation:</p>
+          <p>Documented the development process and features on GitHub, ensuring transparency and ease of future updates.</p>
+        </div>
+      );
+    },
+  },
+  {
     description: "A scalable sentiment analysis model on the Amazon Review Polarity Dataset (34M+ Reviews)",
     title: "Sentiment Analysis of Amazon Reviews",
     src: "/images/python.jpeg",
@@ -217,8 +243,6 @@ const cards = [
             <li>Implemented ML models including Logistic Regression, Naive Bayes, and Random Forest.</li>
             <li>Optimized performance using F1-score, AUC-ROC, and confusion matrices.</li>
           </ul>
-          <p className="font-semibold">Documentation:</p>
-          <p>Documented methodology, results, and visualizations on GitHub Pages, ensuring reproducibility and transparency for future research.</p>
         </div>
       );
     },
