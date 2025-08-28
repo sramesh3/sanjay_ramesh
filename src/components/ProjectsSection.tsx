@@ -10,10 +10,10 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="bg-black border-t-2 border-t-blue-500 py-16"
+      className="bg-black border-t-2 border-t-blue-500 py-16 min-h-screen scroll-mt-24"
     >
-      <BackgroundBeamsWithCollision>
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10 flex flex-col md:flex-row items-start gap-8">
+      <BackgroundBeamsWithCollision className="h-auto md:h-auto min-h-screen w-full items-start py-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10 flex flex-col md:flex-row items-start gap-12 w-full">
         {/* Left: Title & Instructions */}
         <div className="md:w-1/3">
           <motion.h2
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
         </div>
 
         {/* Right: Cards */}
-        <div className="md:w-2/3">
+        <div className="md:w-2/3 flex flex-col">
           <ExpandableCardDemo />
         </div>
       </div>

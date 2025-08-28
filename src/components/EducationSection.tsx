@@ -149,6 +149,18 @@ export default function EducationSection() {
               >
                 Machine Learning
               </CardItem>
+              <CardItem
+                translateZ="60"
+                className="text-sm text-neutral-300 dark:text-neutral-300 hover:underline"
+              >
+                Computer Vision (Ongoing)
+              </CardItem>
+              <CardItem
+                translateZ="60"
+                className="text-sm text-neutral-300 dark:text-neutral-300 hover:underline"
+              >
+                Deep Learning (Ongoing)
+              </CardItem>
             </div>
           </CardBody>
         </CardContainer>

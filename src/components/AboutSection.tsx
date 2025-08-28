@@ -47,11 +47,11 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 3, duration: 0.6 }}
             viewport={{ once: true }}
-            className="w-60 h-60 rounded-full overflow-hidden border-4 border-gray-200 mr-6">
+            className="w-60 h-60 rounded-full overflow-hidden border-4 border-gray-200 mr-2">
             <img
               src="/images/profile.jpeg"
               alt="Sanjay Ramesh"
-              className="object-cover w-full h-full"
+              className="object-cover object-top w-full h-full"
             />
           </motion.div>
 
@@ -64,11 +64,11 @@ export default function AboutSection() {
             className="max-w-md text-left text-white">
             <p className="max-w-xl text-lg text-white mb-6">
               I’m a Computer Science student at Georgia Tech who loves turning ideas into real experiences—whether that’s crafting sleek{" "}
-              <span className="font-bold text-blue-500 dark:text-blue-500">mobile apps</span>, building dynamic{" "}
-              <span className="font-bold text-blue-500 dark:text-blue-500">web interfaces</span>, or diving into{" "}
-              <span className="font-bold text-blue-500 dark:text-blue-500">AI & ML experiments</span>. I thrive on tackling tricky problems and writing clean, efficient code, and I’m always up for learning the next big thing in tech. When I’m not coding, you’ll find me playing sports or settling in for a great movie night.{" "}
+              <span className="font-bold text-white">mobile apps</span>, building dynamic{" "}
+              <span className="font-bold text-white">web interfaces</span>, or diving into{" "}
+              <span className="font-bold text-white">AI & ML experiments</span>. I thrive on tackling tricky problems and writing clean, efficient code, and I’m always up for learning the next big thing in tech. When I’m not coding, you’ll find me playing sports or settling in for a great movie night.{" "}
             </p>
-            <p className="mt-4 text-xl font-bold text-blue-500 dark:text-blue-500">
+            <p className="mt-4 text-xl font-bold text-white">
               Let’s build something awesome together!
             </p>
           </motion.div>

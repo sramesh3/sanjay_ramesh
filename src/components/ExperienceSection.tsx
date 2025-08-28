@@ -4,28 +4,31 @@ import { Timeline, TimelineEntry } from "@/components/ui/Timeline";
 
 export default function ExperienceSection() {
   const data: TimelineEntry[] = [
-    // {
-    //   title: "May 2025",
-    //   content: (
-    //     <>
-    //       <h4 className="text-xl font-bold text-white mb-2">
-    //         Incoming HR Analytics Intern @ Cox Enterprises
-    //       </h4>
-    //     </>
-    //   ),
-    // },
+    {
+      title: "May 2025 - Present",
+      content: (
+        <>
+          <h4 className="text-xl font-bold text-white mb-2">
+            Test Automation Engineer & Product Owner Intern @ Cox Enterprises
+          </h4>
+          <ul className="list-disc list-inside space-y-2 text-white">
+            <li>Built Tricentis TOSCA automation scripts for Workday benefit changes, reducing regression testing time by about 30% and expanding coverage for mission-critical features</li>
+            <li>Migrated 50+ Workday benefits integrations to Confluence for 20+ external vendors, collaborating in an Agile/Scrum environment to deliver enterprise solutions and boost team velocity by about 20%</li>
+          </ul>
+        </>
+      ),
+    },
     {
       title: "Aug 2024 – Present",
       content: (
         <>
           <h4 className="text-xl font-bold text-white mb-2">
-            iOS Developer / Researcher @ Brain Trauma Assessment Protocol
+            iOS Developer/Researcher - Project Lead @ Brain Trauma Assessment Protocol
           </h4>
           <ul className="list-disc list-inside space-y-2 text-white">
-            <li>Developing an Augmentative and Alternative Communication (AAC) iOS application using Swift and SwiftUI, designed to support individuals with sudden-onset aphasia through personalized communication strategies.</li>
-            <li>Conducting research on AAC technologies and user needs to inform app development, iterating based on clinical insights and user feedback.</li>
-            <li>Maintaining a design notebook to document research findings, system architecture, and development progress, supporting future iterations and clinical validation.</li>
-            <li>Implementing Core Data and Firebase for secure and efficient backend data management.</li>
+            <li>Leading the development an Augmented and Alternative Communication (AAC) iOS application using SwiftUI, Core Data, and Firebase to support communication for individuals with sudden-onset aphasia</li>
+            <li>Overseeing project timelines and deliverables for a cross-disciplinary team of developers and clinical researchers</li>
+            <li>Maintaining a research log documenting code patterns and clinical trial requirements for iterative development</li>
           </ul>
         </>
       ),
@@ -35,12 +38,12 @@ export default function ExperienceSection() {
       content: (
         <>
           <h4 className="text-xl font-bold text-white mb-2">
-            Frontend Enginner Intern @ VDart
+            Software Engineer Intern @ VDart
           </h4>
           <ul className="list-disc list-inside space-y-2 text-white">
-            <li>Engineered a responsive landing page using React.js, Tailwind CSS, and the Aceternity UI library, improving user engagement through intuitive access to the company&apos;s talent management services.</li>
-            <li>Prototyped UI designs with Figma, translating complex design requirements into functional and visually appealing interfaces.</li>
-            <li>Gained experience in Redux Toolkit for efficient state management and Axios for seamless API integration.</li>
+            <li>Built a responsive landing page using React, Tailwind CSS, and Aceternity UI to showcase SaaS recruitment tools</li>
+            <li>Integrated Redux Toolkit for global state and Axios for API calls, improving data flow and UI performance</li>
+            <li>Translated Figma designs into modular React components to enhance frontend scalability and reusability</li>
           </ul>
         </>
       ),

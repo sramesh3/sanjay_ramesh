@@ -73,7 +73,7 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] max-h-screen overflow-y-auto flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
@@ -108,7 +108,7 @@ export function ExpandableCardDemo() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-600 text-xs md:text-sm lg:text-base pb-10 flex flex-col items-start gap-4 dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -194,6 +194,31 @@ export const CloseIcon = () => {
 };
 
 const cards = [
+  {
+    description: "A web platform that connects students, mentors, and professionals, using AI-driven tagging to streamline skill discovery and matching",
+    title: "SkillForge",
+    src: "/images/python.jpeg",
+    content: () => {
+      return (
+        <div className="space-y-4 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mb-8">
+          <p className="font-semibold">Tech Stack:</p>
+          <ul className="list-disc list-inside">
+            <li>Microsoft Azure</li>
+            <li>React</li>
+            <li>GitHub Actions</li>
+            <li>Cosmos DB</li>
+            <li>Hugging Face</li>
+          </ul>
+          <p className="font-semibold">Project Highlights:</p>
+          <ul className="list-disc list-inside">
+            <li>Co-developed a serverless, three-tier web application connecting students, mentors, and professionals on Microsoft Azure with independent scaling and isolated deployments for frontend, backend, and data layers</li>
+            <li>Built a React frontend hosted in Azure Blob Storage and backend services in Azure Functions with API Gateway, integrating CI/CD pipelines via GitHub Actions to reduce deployment time by about 50%</li>
+            <li>Integrated Hugging Face’s bart-large-mnli zero-shot classification model for deterministic, low-latency tag generation, and leveraged Cosmos DB for scalable NoSQL data storage</li>
+          </ul>
+        </div>
+      );
+    },
+  },
   {
     description: "An innovative personal portfolio website built on Next.JS, featuring an AI chatbot for interactive user engagement",
     title: "Personal Portfolio Website",

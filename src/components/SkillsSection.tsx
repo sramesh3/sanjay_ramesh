@@ -16,7 +16,7 @@ const LANGUAGES = [
 ];
 
 const CERTIFICATIONS = [
-  "AWS Certified Cloud Practitioner","Software Development Fundamentals (Microsoft)","Introduction to Programming Using Python (Microsoft)","Introduction to Programming Using Java (Microsoft)","General Management (NOCTI)"
+  "AWS Certified Cloud Practitioner","Software Development Fundamentals (Microsoft)","Introduction to Programming Using Python (Microsoft)","Introduction to Programming Using Java (Microsoft)","General Management (NOCTI)", "Tricentis TOSCA Automation"
 ];
 
 import { CardSpotlight } from "./ui/CardSpotlight";
